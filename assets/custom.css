@@ -1,0 +1,68 @@
+/* Estilo para el encabezado principal con una imagen de fondo */
+#hero {
+    background-image: url("images/portada.jpg"); /* Imagen usada como fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    background-position: center; /* Centra la imagen en el contenedor */
+}
+
+/* Estilo para el título principal al estilo de Netflix */
+.titulo-netflix {
+    font-size: 6rem; /* Tamaño grande para destacar */
+    letter-spacing: 0.5rem; /* Espaciado entre letras */
+    font-weight: 900; /* Peso de fuente muy negrita */
+}
+
+/* Animación personalizada para llamar la atención sobre los íconos */
+@keyframes iconAttention {
+    0% { transform: rotate(0deg) scale(1); }
+    20% { transform: rotate(360deg) scale(1); }
+    40% { transform: rotate(360deg) scale(0.9); }
+    60% { transform: rotate(360deg) scale(1); }
+    100% { transform: rotate(360deg) scale(1); }
+}
+
+/* Aplicación de la animación y estilo al icono de análisis */
+.icon-analisis {
+    font-size: 3rem;
+    color: #e50914; /* Rojo característico de Netflix */
+    display: inline-block;
+    animation: iconAttention 3s infinite; /* Reproduce la animación indefinidamente */
+}
+
+/* Resalta la pestaña seleccionada con una línea roja en la parte superior */
+.tab--selected {
+    border-top: 2px solid #e50914 !important;
+}
+
+/* Efecto degradado en texto con fondo animado, estilo cinematográfico */
+.text-gradient {
+    background: linear-gradient(to right, black 0%, red 50%, black 100%);
+    -webkit-background-clip: text; /* Aplica el degradado solo al texto */
+    -webkit-text-fill-color: transparent; /* Hace el texto transparente para mostrar el fondo */
+}
+
+/* Estilo para los enlaces del índice */
+.indice-link {
+    color: #a1a4a5; /* Gris claro */
+    text-decoration: none;
+    transition: all 0.3s ease; /* Transición suave en hover */
+}
+
+.indice-link:hover {
+    color: #ff4c4c; /* Cambia a rojo claro al pasar el cursor */
+}
+
+/* Estilo para secciones que aparecen al hacer scroll (transición de opacidad) */
+.scroll-section {
+    opacity: 0.2; /* Inicialmente tenue */
+    transition: opacity 0.5s ease;
+}
+
+.scroll-section.active {
+    opacity: 1; /* Resalta cuando está visible en la pantalla */
+}
+
+/* Estilo para inputs tipo radio seleccionados, con color rojo Netflix */
+.custom-radio-group input[type="radio"]:checked {
+    accent-color: #E50914;
+}
