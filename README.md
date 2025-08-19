@@ -3,6 +3,8 @@
 Aplicación web interactiva desarrollada con Dash y Plotly para analizar el catálogo de Netflix.
 
 🔗 **Demo en línea:** https://netflix-dash-analisis.onrender.com
+La app puede tardar unos segundos en cargar la primera vez ya que se encuentra desplegada en un plan gratuito de Render.
+
 
 ---
 
