@@ -15,6 +15,8 @@ app = dash.Dash(
     suppress_callback_exceptions=True
 )
 
+server = app.server
+
 # Establecemos el título que aparecerá en la pestaña del navegador
 app.title = "Netflix Dash"
 
